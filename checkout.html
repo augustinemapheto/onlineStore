@@ -4,11 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="./bootstrap/css/styles.css">
+
+    <script src="./bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/script.js"></script>
     <title>Check Out</title>
 </head>
 <body>
     <div class="container">
-        
+        <div class="row">
+            <div class="col">
+                <div class="card mx-auto">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form class="form-group" method="post" action="">
+                                    <h3>Billing Address</h3>
+                                    <div class="form-group">
+                                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                        <input type="text" id="email" name="email" placeholder="john@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                                        <input type="text" id="city" name="city" placeholder="New York">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label for="state">State</label>
+                                                <input type="text" id="state" name="state" placeholder="NY">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label for="zip">Zip</label>
+                                                <input type="text" id="zip" name="zip" placeholder="10001">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+
+                                    </div>
+                                    <div class="form-group">
+
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <form class="form-group" method="post" action="">
+                                    <h3>Payment</h3>
+                                    <div class="form-group">
+                                        <label for="fname">Accepted Cards</label>
+                                            <div class="icon-container">
+                                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"> Name on Card</label>
+                                        <input type="text" id="email" name="email" placeholder="john@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardnumber">Card Number:</label>
+                                        <input type="number" id="adr" name="address" placeholder="542 W. 15th Street">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="city">Exp. Month</label>
+                                                <input type="number" id="city" name="city" placeholder="New York">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="city">Exp. Year</label>
+                                                <input type="text" id="city" name="city" placeholder="New York">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="state">CVV</label>
+                                                <input type="text" id="state" name="state" placeholder="NY">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                        <button class="btn btn-primary" type="submit">Continue to checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
